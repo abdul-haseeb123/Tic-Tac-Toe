@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <h1>Result:</h1>
+    <h1>Tic Tac Toe</h1>
+    <button onclick="startGame()">Start Game</button>
+    <table class="table">
+        <tr class="row" id="row1">
+            <td id="0">&nbsp;</td>
+            <td id="1">&nbsp;</td>
+            <td id="2">&nbsp;</td>
+        </tr>
+        <tr class="row" id="row2">
+            <td id="3">&nbsp;</td>
+            <td id="4">&nbsp;</td>
+            <td id="5">&nbsp;</td>
+        </tr>
+        <tr class="row" id="row3">
+            <td id="6">&nbsp;</td>
+            <td id="7">&nbsp;</td>
+            <td id="8">&nbsp;</td>
+        </tr>
+    </table>
+    <div class="choices">
+        <h3>Select Choice for Player 1</h3>
+        <div id="choices">
+            <button class="active">X</button>
+            <button>O</button>
+        </div>
+        <button class="start" onclick="choicesSelected()">Start</button>
+    </div>
+</body>
+
+</html>
