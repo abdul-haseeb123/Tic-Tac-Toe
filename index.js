@@ -13,8 +13,8 @@ const winningCombs = [
     [2, 4, 6]
 ]
 
-const p1Map = [0, 0, 0, 0, 0, 0, 0, 0]
-const p2Map = [0, 0, 0, 0, 0, 0, 0, 0]
+let p1Map = [0, 0, 0, 0, 0, 0, 0, 0]
+let p2Map = [0, 0, 0, 0, 0, 0, 0, 0]
 
 function checkComb(comb, pMap)
 {
@@ -149,6 +149,8 @@ function choicesSelected() {
 
 function loadGame() {
     const allBoxes = document.querySelectorAll('td')
+    p1Map = [0, 0, 0, 0, 0, 0, 0, 0]
+    p2Map = [0, 0, 0, 0, 0, 0, 0, 0]
 
     for (let i = 0; i < allBoxes.length; i++) {
         allBoxes[i].addEventListener('click', () => {
